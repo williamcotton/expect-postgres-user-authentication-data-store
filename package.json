@@ -1,0 +1,41 @@
+{
+  "name": "expect-postgres-user-authentication-data-store",
+  "version": "1.0.0",
+  "description": "Expect Postgres User Authentication Date Store",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "db:migrate:currentVersion": "knex -- migrate:currentVersion",
+    "db:migrate:latest": "knex -- migrate:latest",
+    "db:migrate:make": "knex -- migrate:make",
+    "db:migrate:rollback": "knex -- migrate:rollback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamcotton/expect-postgres-user-authentication-data-store.git"
+  },
+  "keywords": [
+    "expect",
+    "postgres",
+    "user",
+    "authentication",
+    "data",
+    "store"
+  ],
+  "author": "William Cotton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamcotton/expect-postgres-user-authentication-data-store/issues"
+  },
+  "homepage": "https://github.com/williamcotton/expect-postgres-user-authentication-data-store#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.8",
+    "pg": "^6.1.5"
+  },
+  "devDependencies": {
+    "knex": "^0.12.9"
+  }
+}
